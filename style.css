@@ -39,9 +39,8 @@ header{
 .hh{
     margin-left: 10%;
     flex-grow: 2;
-
-
 }
+
 .menu1{
     flex-grow: 1;
     display: flex;
@@ -322,12 +321,13 @@ hr{
 .container-cover{
   display: flex;
   flex-direction: row;
-  margin-left: 15%;
-  margin-right: 15%;
-
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 20px;
+  
 }
 .cover{
-  margin-right: 7%;
+  margin-right: 10%;
   background-position: center;
   background-size: cover;
   width: 25%;
@@ -342,6 +342,7 @@ hr{
   margin-right: 5%;
   font-family: "Anonymous Pro", sans-serif;
   line-height: 23px;
+
 }
 
 #read-btn{
@@ -352,7 +353,8 @@ hr{
   border-radius: 7px;
   font-size: 18px;
   color: var(--text-color);
-  width: 150px;
+  width: 200px;
+  margin-top: 150px;
 }
 #read-btn:hover{
   color: var(--primary-color);
@@ -377,7 +379,7 @@ hr{
     font-size: 16px;
     gap: 10px;
   }
-
+  
   .hh {
     font-size: 0px;
   }
@@ -414,6 +416,18 @@ hr{
     font-size: 30px;
   }
 
+  .container-cover{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  #read-btn{
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
 
 }
 
@@ -463,4 +477,16 @@ hr{
     flex-wrap: wrap;
     justify-content: center;
   }
+
+.container-cover{
+margin-left: 10%;
+margin-right: 6%;
+
+}
+.cover{
+  margin-right: 150px;
+}
+#read-btn{
+  margin-top: 20px;
+}
 }
