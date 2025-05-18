@@ -60,6 +60,10 @@ header{
     padding: 4px;
     border-radius: 7px;
 }
+#m1:hover{
+  box-shadow: 0 4px 8px rgba(0, 133, 215, 0.337);
+}
+
 .menu:hover{
     color: var(--primary-color);
     
@@ -276,7 +280,6 @@ header{
 
 #lightBtn:hover{
   color: var(--primary-color);
-  border-width: 3px;
   box-shadow: 0 4px 8px rgba(0, 133, 215, 0.337);
 }
 
@@ -293,7 +296,7 @@ header{
 
 #darkBtn:hover{
   color: var(--primary-color);
-  border-width: 3px;
+
   box-shadow: 0 4px 8px rgba(0, 133, 215, 0.337);
 }
 
@@ -429,6 +432,11 @@ hr{
     margin-bottom: 30px;
   }
 
+  .back-to-top {
+    bottom: 20px;
+    right: 10px;
+    font-size: 25px;
+  }
 }
 
 /* Планшеты (от 768px до 1024px) */
