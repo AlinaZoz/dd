@@ -476,3 +476,39 @@ html, body{
       margin-top: 20px;
     }
 }
+
+
+@media (min-width: 1675px) {
+  p{
+    font-size: 20px;
+  }
+  h3{
+    font-size: 40px;
+  }
+  .sidebar-menu {
+    width: 30%;
+    right: -600px;
+  }
+  #card-1{
+    height: 300px;
+  }
+  #card-2{
+    height: 300px;
+  }
+  #card-3{
+    height: 500px;
+  }
+  #card-4{
+    height: 350px;
+  }
+  #card-5{
+    height: 300px;
+  }
+}
+
+@media (min-width: 2000px) {
+  .sidebar-menu {
+    width: 25%;
+    right: -650px;
+  }
+}
