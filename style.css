@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Kelly+Slab&family=Pangolin&family=Press+Start+2P&family=Reggae+One&family=Rubik+Glitch&family=Ruslan+Display&family=Stick&family=Yeseva+One&display=swap');
 
 html, body{
 
@@ -8,7 +9,7 @@ background-color: var(--bg-color);
 }
 
 :root {
-  --bg-color: #ffffff;
+  --bg-color: #ebebeb;
   --text-color: #181818;
   --primary-color:  rgb(128, 175, 223);
   --secondary-color: #333333;
@@ -22,7 +23,7 @@ background-color: var(--bg-color);
 }
 
 header{
-    position: sticky;
+
     height: 70px;
     top: 0px;
     display: flex;
@@ -68,6 +69,8 @@ header{
     color: var(--primary-color);
     
 }
+/* --------------------------pages----------------------------- */
+
 .anim{
     background: url(img/img1.png);
     background-position: center;
@@ -75,6 +78,7 @@ header{
     width: 100%;
     aspect-ratio: 17/5;
 }
+
 #anim1{
   background: url(img/img2.png);
   background-position: center;
@@ -97,6 +101,7 @@ header{
   width: 100%;
   aspect-ratio: 17/5;
 }
+
 #anim4{
   background: url(img/img5.png);
   background-position: center;
@@ -112,7 +117,7 @@ header{
   aspect-ratio: 17/5;
 }
 #anim6{
-  background: url(img/img9.png);
+  background: url(img/img7.png);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -125,14 +130,49 @@ header{
   width: 100%;
   aspect-ratio: 17/5;
 }
+#anim8{
+  background: url(img/img7.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  aspect-ratio: 17/5;
+}
+#anim9{
+  background: url(img/img8.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  aspect-ratio: 17/5;
+}
+#anim10{
+  background: url(img/img9.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  aspect-ratio: 17/5;
+}
+.hh1{
+  font-family: "Pangolin", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#body_3{
+background-image: url(img/bg_3.png);
+background-repeat: no-repeat;
+}
+
+
+/* ------------------------------------------------------- */
 .hh1{
     margin-top: 3%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Anonymous Pro", sans-serif;
     font-size: 32px;
     font-weight: 700;
+    
+    
 
 }
 .main-text{
@@ -155,6 +195,7 @@ header{
   .back-to-top:hover{
     color: var(--primary-color);
   }
+
   .main-text{
     margin-left: 10%;
     margin-right: 10%;
@@ -174,7 +215,7 @@ header{
     height: 70px;
     background-color: var(--secondary-color);
   }
-
+/* --------------------------menu----------------------------- */
   .menu-toggle {
     display: flex;
     justify-content: center;
@@ -188,9 +229,8 @@ header{
     cursor: pointer;
     z-index: 100;
     border-radius: 4px;
-    background-color: var(--bg-color);
+    background-color: rgba(0, 0, 0, 0);
   }
-
 
 .overlay {
     position: fixed;
@@ -205,7 +245,6 @@ header{
     transition: opacity 0.3s, visibility 0.3s;
   }
   
-
   .sidebar-menu {
     position: fixed;
     top: 0;
@@ -243,7 +282,6 @@ header{
     color: var(--primary-color);
   }
   
-
   .menu-open .overlay {
     opacity: 1;
     visibility: visible;
@@ -310,6 +348,7 @@ hr{
   border-color: var(--primary-color);
 }
 
+/* --------------------------other----------------------------- */
 #footer-text{
   justify-content: center;
   font-family: "Anonymous Pro", sans-serif;
@@ -321,50 +360,77 @@ hr{
   padding-top: 10px;
 }
 
-.container-cover{
-  display: flex;
-  flex-direction: row;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: 20px;
-  
-}
-.cover{
-  margin-right: 10%;
+.panel {
+  position: absolute;
+
+  left: -250px;
+  width: 300px;
+  height: 100px;
+  background-image: url(img/hand.png);
   background-position: center;
   background-size: cover;
-  width: 25%;
-  aspect-ratio: 1/1.5;
-  margin-top: 20px;
-}
-.info{
+  transition: all 0.3s ease-out;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin-left: 5%;
-  margin-right: 5%;
-  font-family: "Anonymous Pro", sans-serif;
-  line-height: 23px;
-
+  justify-content: flex-end;
+  padding-right: 20px;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+.panel-2 {
+  position: absolute;
+  right: -250px; 
+  width: 300px;
+  height: 100px;
+  background-image: url(img/hand_r.png);
+  background-position: center;
+  background-size: cover;
+  transition: all 0.3s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+.panel:hover {
+  left: -200px; /* Полностью выезжает при наведении */
+}
+.panel-2:hover{
+  right: -200px;
+}
+.panel::after {
+  margin-left: 10px;
+  transition: transform 0.2s;
 }
 
-#read-btn{
-  border: solid var(--primary-color);
-  background-color: var(--bg-color);
-  border-width: 2px;
-  padding: 5px;
-  border-radius: 7px;
-  font-size: 18px;
-  color: var(--text-color);
-  width: 200px;
-  margin-top: 150px;
+.panel:hover::after {
+  transform: translateX(5px);
 }
-#read-btn:hover{
-  color: var(--primary-color);
-  border-width: 3px;
-  box-shadow: 0 4px 8px rgba(0, 133, 215, 0.337);
+/* --------------------------other----------------------------- */
+.gif-container {
+  text-align: center;
+}
+.gif-replaceable{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s;
 }
 
+.gif-replaceable:hover {
+  transform: scale(1.2);
+}
+
+.instructions {
+  margin-top: 20px;
+  color: #666;
+}
+.text_pic{
+  display: flex;
+  flex-direction: row;
+}
 /* ---------------- Медиа-запросы ---------------- */
 
 /* Телефоны (меньше 768px) */
@@ -419,23 +485,29 @@ hr{
     font-size: 30px;
   }
 
-  .container-cover{
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  
-  #read-btn{
-    margin-top: 10px;
-    margin-bottom: 30px;
-  }
-
   .back-to-top {
     bottom: 20px;
     right: 10px;
     font-size: 25px;
+  }
+
+  .anim, #anim1,#anim2,#anim3,#anim4,#anim5,#anim6,#anim7,#anim8,#anim9,#anim10{
+    aspect-ratio: 12/5;
+
+    
+}
+#body_3{
+  background-image: url(img/bg_3_2.png);
+  background-repeat: no-repeat;
+  }
+  .panel {
+    left: -280px;
+  }
+  .panel-2{
+    right: -280px;
+  }
+  .text_pic{
+    flex-direction: column;
   }
 }
 
@@ -485,16 +557,8 @@ hr{
     flex-wrap: wrap;
     justify-content: center;
   }
-
-.container-cover{
-margin-left: 10%;
-margin-right: 6%;
-
-}
-.cover{
-  margin-right: 150px;
-}
-#read-btn{
-  margin-top: 20px;
-}
+  #body_3{
+    background-image: url(img/bg_3_2.png);
+    background-repeat: no-repeat;
+    }
 }
