@@ -94,7 +94,7 @@ header{
 }
 
 #anim2{
-  background: url(img/img3.png);
+  background: url(img/cov3.gif);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -144,14 +144,7 @@ header{
   aspect-ratio: 17/5;
 }
 #anim9{
-  background: url(img/img8.png);
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  aspect-ratio: 17/5;
-}
-#anim10{
-  background: url(img/img9.png);
+  background: url(img/cov9.gif);
   background-position: center;
   background-size: cover;
   width: 100%;
