@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
 </head>
-<body>
-<header>
+<body id="body_1">
+<header id="header_1">
     <p class="hh"><a href="index.html" style=" text-decoration: none; color:var(--text-color)">Тед Чан. «История твоей жизни»</a></p>
     <div class="menu1" >
         <button id="menu-toggle" class="menu-toggle">
@@ -52,10 +53,11 @@
   </div>
 
 <div class="container">
-    <div class="anim">
-    </div>
+
+    <div id="lottie-anim" class="anim-container"></div>
+
     <div class="hh1">
-        <p>
+        <p id="h_1">
             Вавилонская башня
         </p>
     </div>
@@ -233,7 +235,7 @@
 <br /> 
 </div>
 
-<div class="anim" id="anim1"></div>
+<div id="lottie-anim" class="anim-container"></div>
 
 <div class="main-text">
     <p>Они поднимались и поднимались, и небеса становились все более блеклыми, и, проснувшись однажды утром и став у края, Хиллала вскрикнул от неожиданности: то, что доселе казалось бледным небом, сейчас предстало бескрайним белым потолком. Они подошли так близко, что узрели небесный свод, увидели его, как плотный массивный панцирь, сковавший простор. Все рудокопы, когда говорили, понижали голос и, как полоумные, пялились вверх, а обитатели башни над ними смеялись.</p> 
@@ -340,6 +342,7 @@
 <p>Колени Хиллалы дрожали от благоговения, но он поднялся на ноги и пошел искать погонщиков каравана. Он вернется в Вавилон. Возможно, снова увидит Лугату. Он пошлет весточку тем, кто трудится на башне. Он расскажет им, как устроено мироздание.</p>
     </div>
     </div>
+
 </div>
 
 </div>
@@ -354,5 +357,18 @@
     <a href="index.html" style="text-decoration: none;"> <p id="footer-text">Тед Чан. «История твоей жизни» | «Story of Your Life» 1998-2002</p></a>
 </footer>
 </body>
+
+<script>
+    const animContainer = document.getElementById('lottie-anim');
+    const animData = {
+      container: animContainer,
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'img/10.json' 
+    };
+    
+    const anim = lottie.loadAnimation(animData);
+  </script>
 
 </html>
