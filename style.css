@@ -71,6 +71,12 @@ header{
 }
 /* --------------------------pages----------------------------- */
 
+.dotlottie-player {
+  width: 100%;
+    aspect-ratio: 17/5;
+    margin: 0 auto;
+    overflow: hidden;
+}
 .anim{
     background: url(img/img1.png);
     background-position: center;

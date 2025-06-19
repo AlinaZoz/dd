@@ -54,8 +54,13 @@
 
 <div class="container">
 
-        <div class="anim">
-    </div>
+    <dotlottie-player
+    src="https://lottie.host/d0ae4f46-3b7d-443c-8ff9-5e7f70ca98a1/Ktv0e3d9aH.lottie"
+    background="transparent"
+    speed="1"
+    loop
+    autoplay
+  ></dotlottie-player>
 
     <div class="hh1">
         <p id="h_1">
@@ -359,17 +364,11 @@
 </footer>
 </body>
 
-<script>
-    const animContainer = document.getElementById('lottie-anim');
-    const animData = {
-      container: animContainer,
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      path: 'img/10.json' 
-    };
-    
-    const anim = lottie.loadAnimation(animData);
-  </script>
+
+<script
+  src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+  type="module"
+></script>
+
 
 </html>
