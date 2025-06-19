@@ -52,3 +52,46 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
   });
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Создаем объект с данными для каждого изображения
+  const imageData = {
+    'gif-image-1': {
+      static: 'img/oct_1.png',
+      gif: 'img/oct_1_a.gif',
+      duration: 7060
+    },
+    'gif-image-2': {
+      static: 'img/oct_2.png',
+      gif: 'img/oct_2_a.gif',
+      duration: 7060
+    },
+    // Добавьте столько элементов, сколько нужно
+  };
+
+  // Обрабатываем все изображения
+  Object.keys(imageData).forEach(imageId => {
+    const image = document.getElementById(imageId);
+    if (!image) return;
+
+    const { static: staticImage, gif: gifUrl, duration } = imageData[imageId];
+    let isGifPlaying = false;
+
+    // Устанавливаем начальное статичное изображение
+    image.src = staticImage;
+
+    image.addEventListener('click', function() {
+      if (!isGifPlaying) {
+        // Запускаем GIF
+        image.src = gifUrl;
+        isGifPlaying = true;
+
+        setTimeout(function() {
+          image.src = staticImage;
+          isGifPlaying = false;
+        }, duration);
+      }
+    });
+  });
+});
+
