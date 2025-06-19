@@ -77,16 +77,10 @@ header{
     margin: 0 auto;
     overflow: hidden;
 }
-.anim{
-    background: url(img/img1.png);
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    aspect-ratio: 17/5;
-}
+
 
 #anim1{
-  background: url(img/img2.png);
+  background: url(img/cov2.gif);
   background-position: center;
   background-size: cover;
   width: 100%;
