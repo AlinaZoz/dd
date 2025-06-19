@@ -558,11 +558,14 @@ hr{
     background-repeat: no-repeat;
     }
 
-  
+
+
 }
-.sidebar-menu {
-  width: 30%;
-  right: -600px;
+@media (min-width: 1675px) {
+  .sidebar-menu {
+    width: 30%;
+    right: -600px;
+  }
 }
 @media (min-width: 2000px) {
   .sidebar-menu {
